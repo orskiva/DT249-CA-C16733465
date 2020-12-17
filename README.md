@@ -3,12 +3,9 @@
 Using a dataset ( the "Adult Data Set") from the UCI Machine-Learning Repository we can predict based on a number of factors whether or not someone's income will be greater than $50,000.
 
 ## Building the classifier
+Data is imported directly from web as a CSV. Having selected for the apppropriate, ''clean'' dataset (not utilising any lines with missing info/categories), the data is split into greater than (g) and less than/equal (l) 50k income. Dataset is then split into 75/25, to be used as training and test data. The average values of l and g for the test data are calculated. These two results ar ethen averaged for each attribute to compute a midpoint or 'class separation value'.
+For each record, each attribute is tested against the midpoint values of l/g datasets. The overall result is the greater count of the individual results (<=50K, >50K).
 
-Look at the attributes and, for each of the two outcomes, make an average value for each one, Then average these two results for each attribute to compute a midpoint or 'class separation value'.
-
-For each record, test whether each attribute is above or below its midpoint value and flag it accordingly. For each record the overall result is the greater count of the individual results (<=50K, >50K)
-
-You'll know your model works if you achieve the same results as thee known result for the records. You should track the accuracy of your model, i.e how many correct classifications you made as a percentage of the total number of records.
 
 
 
@@ -34,12 +31,12 @@ Listing of attributes:
 14. Native-country: United-States, Cambodia, England, Puerto-Rico, Canada, Germany, Outlying-US(Guam-USVI-etc), India, Japan, Greece, South, China, Cuba, Iran, Honduras, Philippines, Italy, Poland, Jamaica, Vietnam, Mexico, Portugal, Ireland, France, Dominican-Republic, Laos, Ecuador, Taiwan, Haiti, Columbia, Hungary, Guatemala, Nicaragua, Scotland, Thailand, Yugoslavia, El-Salvador, Trinadad&Tobago, Peru, Hong, Holand-Netherlands. This is NOT NEEDED for our study.
 15. Outcome for this record: Can be >50K or <=50K.
 
-Data is available from http://archive.ics.uci.edu/ml/machine-learning-databases/adult/adult.data. You should be able to read this directly from the Internet.
+Data is available from http://archive.ics.uci.edu/ml/machine-learning-databases/adult/adult.data. This application downloads and reads this CSV directly from the web. 
 
-Fields that have 'discrete' attributes such as 'Relationship' can be given a numeric weight by counting the number of occurrences as a fraction of the total number of positive records (outcome > 50K) and negative records (outcome <= 50K). So, if we have 10 positive records and they have values Wife:2, Own-child: 3, Husband:2, Not-in-family:1, Other-realtive:1 and Unmarried:1 then this would yield factors of 0.2, 0.3, 0.2, 0.1, 0.1 and 0.1 respectively.
+Fields that have 'discrete' attributes such as 'Relationship' are given a numeric weight by counting the number of occurrences as a fraction of the total number of positive records (outcome > 50K) and negative records (outcome <= 50K).
 '''
 
 ## Running the project
 Project was developed in a python3 environment
 1. Install request module: `pip3 install requests`
-2. Run app.py through IDE or command line: `python classifier.py`
+2. Run classifier.py through IDE or command line: `python classifier.py`
