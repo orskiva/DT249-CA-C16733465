@@ -4,7 +4,7 @@ Using a dataset ( the "Adult Data Set") from the UCI Machine-Learning Repository
 
 ## Building the classifier
 Data is imported directly from the web as a CSV. Having selected for the apppropriate, ''clean'' dataset (not utilising any lines with missing info/categories), the data is split into greater than (g) and less than/equal (l) 50k income. Dataset is then split into 75/25, to be used as training and test data respectively. The average values of l and g for the test data are calculated. These two results ar ethen averaged for each attribute to compute a midpoint or 'class separation value'.
-For each record, each attribute is tested against the midpoint values of l/g datasets. The overall result is the greater count of the individual results (<=50K, >50K).
+For each record, each attribute is tested against the midpoint values of l/g datasets. The overall result is the greater count of the individual results (<=50K, >50K). The test dataset is then applied to the calssifier, and accuracy is calculated against the known l/g values. 
 
 
 
