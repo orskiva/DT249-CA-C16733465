@@ -1,4 +1,4 @@
-# Income predictor - Iva Oreskovic
+# Income predictor - Iva Oreskovic - C16733465
 
 Using a dataset ( the "Adult Data Set") from the UCI Machine-Learning Repository we can predict based on a number of factors whether or not someone's income will be greater than $50,000.
 
