@@ -5,8 +5,6 @@ from utils import *
 from constants import *
 
 # keeps track of the total number of instances of each attribute, as well as the totals for l & g
-from utilities import read_file, remove_attributes
-
 TOTAL_VAL_COUNTS = {
     'totals': {'l': 0, 'g': 0},
     'Private': [0, 0],
