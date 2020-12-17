@@ -3,7 +3,7 @@
 Using a dataset ( the "Adult Data Set") from the UCI Machine-Learning Repository we can predict based on a number of factors whether or not someone's income will be greater than $50,000.
 
 ## Building the classifier
-Data is imported directly from the web as a CSV. Having selected for the apppropriate, ''clean'' dataset (not utilising any lines with missing info/categories), the data is split into greater than (g) and less than/equal (l) 50k income. Dataset is then split into 75/25, to be used as training and test data. The average values of l and g for the test data are calculated. These two results ar ethen averaged for each attribute to compute a midpoint or 'class separation value'.
+Data is imported directly from the web as a CSV. Having selected for the apppropriate, ''clean'' dataset (not utilising any lines with missing info/categories), the data is split into greater than (g) and less than/equal (l) 50k income. Dataset is then split into 75/25, to be used as training and test data respectively. The average values of l and g for the test data are calculated. These two results ar ethen averaged for each attribute to compute a midpoint or 'class separation value'.
 For each record, each attribute is tested against the midpoint values of l/g datasets. The overall result is the greater count of the individual results (<=50K, >50K).
 
 
