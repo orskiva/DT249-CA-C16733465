@@ -42,4 +42,4 @@ Fields that have 'discrete' attributes such as 'Relationship' can be given a num
 ## Running the project
 Project was developed in a python3 environment
 1. Install request module: `pip3 install requests`
-2. Run app.py through IDE or command line: `python app.py`
+2. Run app.py through IDE or command line: `python classifier.py`
